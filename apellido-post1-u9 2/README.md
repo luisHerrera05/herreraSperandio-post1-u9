@@ -1,6 +1,4 @@
-# Recordatorios Citas Service
 
-![CI](https://github.com/USUARIO/apellido-post1-u9/actions/workflows/ci.yml/badge.svg)
 
 ## Descripción
 Post-contenido de la Unidad 9 (*Patrones de Diseño de Software*, Sexto Semestre): **Probar el diseño con JUnit 5, Mockito, Test Doubles e Integración Continua**.
