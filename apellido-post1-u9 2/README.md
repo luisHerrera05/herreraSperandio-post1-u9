@@ -90,11 +90,6 @@ H2 es un **Fake** aceptable: su contrato SQL/JPA es equivalente al de una base r
 - **Inyección ambigua evitada.** Tras la Parte 2 existen tres beans `ReminderChannel` (`emailReminderChannel`, `smsReminderChannel`, `canalUrgente`). Por eso `ReminderChannelFactoryImpl` y el servicio usan `@Qualifier` por nombre de bean, en lugar de depender de la inyección por tipo.
 - **Sobrescritura de beans.** En el `@TestConfiguration` el bean se llama `clockFijo` (no `clock`): Spring Boot desactiva por defecto la sobrescritura de beans, y reutilizar el nombre `clock` de `ClockConfig` haría fallar el contexto. `@Primary` garantiza que sea el que se inyecte.
 
-## Evidencias
-> Reemplazar por capturas reales antes de entregar.
-- `docs/img/tests-verde.png`: salida de `mvn verify` con todas las pruebas en verde.
-- `docs/img/jacoco.png`: reporte de cobertura (`target/site/jacoco/index.html`).
-- `docs/img/actions-success.png`: pestaña *Actions* con el workflow en "Success".
 
 ## Herramientas utilizadas
 Java 21, Spring Boot 3.3, Spring Data JPA, H2, Lombok, JUnit 5, Mockito, JaCoCo, Apache Maven, GitHub Actions, Git y GitHub.
